@@ -257,4 +257,17 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
+.post-container{
+max-width:800px;
+margin:auto;
+padding:40px;
+background:white;
+}
+
+.post-img{
+width:100%;
+border-radius:10px;
+margin:20px 0;
+}
+
 
