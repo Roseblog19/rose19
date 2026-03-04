@@ -41,6 +41,27 @@ card.style.display="none";
 }
 
 });
+  document.getElementById("category").addEventListener("change", function(){
+
+let value = this.value;
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+if(value === "all"){
+card.style.display="block";
+}else if(card.innerText.includes(value)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
 
 });
+
+});
+
+
+});
+
 
