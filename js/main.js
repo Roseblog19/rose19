@@ -1,12 +1,10 @@
-fetch("data/posts.json")
-.then(response => response.json())
-.then(data => {
-
-let container = document.getElementById("blog-container");
+let featuredContainer = document.getElementById("featured-posts");
 
 data.forEach(post => {
 
-container.innerHTML += `
+if(post.featured){
+
+featuredContainer.innerHTML += `
 
 <div class="card">
 
@@ -24,6 +22,6 @@ Read More
 
 `;
 
-});
+}
 
 });
